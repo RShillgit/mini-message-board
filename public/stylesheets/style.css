@@ -4,5 +4,36 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+  color: black;
+}
+
+.allMessages {
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+#createMessage, #cancelMessage {
+  margin-top: 1rem;
+}
+
+.message {
+  border: 2px solid skyblue;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.message li {
+  list-style: none;
+}
+
+.formInfo {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+#submitNewMessage {
+  width: min-content;
 }

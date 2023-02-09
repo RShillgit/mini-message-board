@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    form(action='/new', method='POST')
+    
+        h1 New Message
+
+        div(class='formInfo')
+            label Name: 
+                input(type='text', name='name', value='')
+            label Message Text: 
+                input(type='text', name='messageText', value='')
+            input(type='submit', value='Submit' id='submitNewMessage')
+
+    button(type='button' id='cancelMessage')
+        a(href='/') Cancel
+    

@@ -2,4 +2,14 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  
+  div(class='allMessages')
+    each val in messages
+      ul(class='message')   
+        li #{val.text}  
+        li #{val.user}
+        li #{val.added}
+
+  button(type='button' id='createMessage') 
+      a(href='/new') Create Message
+
