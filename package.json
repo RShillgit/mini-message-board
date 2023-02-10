@@ -3,11 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "npm start",
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
-    "serverstart": "DEBUG=express-locallibrary-tutorial:* npm run devstart",
-    "heroku-postbuild": "npm run build"
+    "serverstart": "DEBUG=express-locallibrary-tutorial:* npm run devstart"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
